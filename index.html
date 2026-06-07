@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="发票AI智能管理系统 - 自动识别、分类、整理发票" />
+  <meta name="keywords" content="发票管理, AI识别, OCR, 发票整理" />
+  <title>发票AI智能管理系统</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+
+  <!-- Element Plus CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/element-plus@2.9.1/dist/index.css" />
+
+  <!-- 全局样式 -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Vue应用挂载点 -->
+  <div id="app">
+    <!-- 加载占位（Vue加载前显示） -->
+    <div style="display: flex; align-items: center; justify-content: center; height: 100vh; flex-direction: column; background: #f0f2f5;">
+      <img src="assets/logo.svg" alt="加载中" style="width: 80px; height: 80px; margin-bottom: 20px;" />
+      <p style="color: #909399; font-size: 16px;">系统加载中...</p>
+    </div>
+  </div>
+
+  <!-- CDN引入依赖库 -->
+  <!-- Vue3 -->
+  <script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"></script>
+  <!-- Element Plus -->
+  <script src="https://unpkg.com/element-plus@2.9.1/dist/index.full.min.js"></script>
+  <!-- Element Plus 中文语言包 -->
+  <script src="https://unpkg.com/element-plus@2.9.1/dist/locale/zh-cn.min.js"></script>
+  <!-- Element Plus 图标 -->
+  <script src="https://unpkg.com/@element-plus/icons-vue@2.3.1/dist/index.iife.min.js"></script>
+  <!-- Axios -->
+  <script src="https://unpkg.com/axios@1.7.9/dist/axios.min.js"></script>
+  <!-- ECharts -->
+  <script src="https://unpkg.com/echarts@5.5.1/dist/echarts.min.js"></script>
+
+  <!-- 应用脚本（按依赖顺序加载） -->
+  <script src="js/utils/helpers.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/components/navbar.js"></script>
+  <script src="js/components/dashboard.js"></script>
+  <script src="js/components/invoice-list.js"></script>
+  <script src="js/components/invoice-detail.js"></script>
+  <script src="js/components/upload.js"></script>
+  <script src="js/components/stats.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
