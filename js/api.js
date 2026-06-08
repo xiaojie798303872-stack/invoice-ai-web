@@ -112,7 +112,7 @@ const Api = (() => {
    * @returns {Promise} 识别结果
    */
   function uploadInvoice(formData, onProgress) {
-    return instance.post('/api/upload', formData, {
+    return instance.post('/upload', formData, {
       headers: {
         'Content-Type': 'multipart/form-data'
       },
